@@ -1,11 +1,9 @@
 function showAlert() {
-    alert('Hello, world!');
-  }
- 
+  alert('Hello, world!');
+}
 
-
-window.onload = function() 
- // Initialize map
+window.onload = function() {
+  // Initialize map
   var map = L.map('map').setView([53.7531, 15.6229], 9);
 
   // Add tile layer to map
@@ -26,4 +24,4 @@ window.onload = function()
     radius: 5000
   }).addTo(map);
   circle.bindPopup("Koszalin<br>Zachodniopomorskie");
-});
+};
