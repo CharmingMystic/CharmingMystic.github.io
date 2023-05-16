@@ -1,5 +1,7 @@
 /* required styles */
-
+body {
+    background-color: #ffc0cb;
+}
 .leaflet-pane,
 .leaflet-tile,
 .leaflet-marker-icon,
