@@ -10,10 +10,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'map' %}">Map</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="about.html}">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'logout' %}">Logout</a></li>
                 {% else %}
