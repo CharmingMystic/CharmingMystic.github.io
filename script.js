@@ -1,7 +1,4 @@
 function showAlert() {
-    alert('Hello, world!');
-  }
- 
   alert('Hello, world!');
 }
 
@@ -9,9 +6,6 @@ window.onload = function() {
   // Initialize map
   var map = L.map('map').setView([53.7531, 15.6229], 9);
 
-var map = L.map('map').setView([53.7531, 15.6229], 9);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   // Add tile layer to map
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
