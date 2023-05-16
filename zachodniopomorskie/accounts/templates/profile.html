@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Profile
+{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+Zalogowany jako: {{ request.user.username }}
+{% endblock %}
