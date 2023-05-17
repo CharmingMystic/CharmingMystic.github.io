@@ -7,6 +7,8 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+<div> 
+    <link href="/older/home.css" rel="stylesheet" /> 
     <div class="home-container">
 
         <div data-role="Header" class="home-navbar-container">
@@ -22,11 +24,13 @@
               <span class="Navbar-Link"><a href="home.html">Profile</a></span>
               <span class="Navbar-Link"><a href="home.html">Home</a></span>
             </div>
-    <main>
-    {% block content %}{% endblock %}
-    </main>
-    <footer>
+        <main>
+        {% block content %}{% endblock %}
+        </main>
+        <footer>
         Zachodniopomorskie projekt 2023 4TB
-    </footer>
+        </footer>
+    </div>
+</div>    
 </body>
 </html>
