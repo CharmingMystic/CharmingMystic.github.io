@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .home-navbar-container {
   width: 100%;
   display: flex;
