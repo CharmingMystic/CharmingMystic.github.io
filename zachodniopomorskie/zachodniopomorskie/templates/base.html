@@ -7,23 +7,21 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="map.html">Map</a></li>
-                <li><a href="about.html}">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">Logout</a></li>
-                {% else %}
-                    <li><a href="{% url 'register' %}">Register</a></li>
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                {% endif %}
-                <li><a href="{% url 'profile' %}">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="home-container">
+
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <span class="Card-Heading home-heading">Logo</span>
+            <div class="home-links-container">
+              <span class="home-link Navbar-Link"><a href="about.html">About</a></span>
+              <span class="home-link1 Navbar-Link"><a href="base.html">Base</a></span>
+              <span class="home-link2 Navbar-Link"><a href="Co.html">Contact</a></span>
+              <span class="Navbar-Link"><a href="home.html">Logout</a></span>
+              <span class="Navbar-Link"><a href="home.html">Register</a></span>
+              <span class="Navbar-Link"><a href="home.html">Login</a></span>
+              <span class="Navbar-Link"><a href="home.html">Profile</a></span>
+              <span class="Navbar-Link"><a href="home.html">Home</a></span>
+            </div>
     <main>
     {% block content %}{% endblock %}
     </main>

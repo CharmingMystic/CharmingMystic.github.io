@@ -1,9 +1,121 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/components/leaflet.js"></script>
+    
+  
+ 
+  
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-{% block title %}
-Zachodniopomorskie home
-{% endblock %}
+   
+    <link rel="stylesheet" href="/components/leaflet.css">
+    
+    <link rel="stylesheet" href="/older/style.css" />
+    <script src="script.js"></script>
+  </head>
+  
+  
+  
+  <body>
+    <div>
+      
+      <link href="/older/home.css" rel="stylesheet" /> 
 
-{% block content %}
-Strona startowa (home)
-{% endblock %}
+       
+
+      <div class="home-container">
+
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <span class="Card-Heading home-heading">Logo</span>
+            <div class="home-links-container">
+              <span class="home-link Navbar-Link"><a href="about.html">About</a></span>
+              <span class="home-link1 Navbar-Link"><a href="base.html">Base</a></span>
+              <span class="home-link2 Navbar-Link"><a href="contact.html">Contact</a></span>
+              <span class="Navbar-Link"><a href="home.html">Home</a></span>
+              <span class="Navbar-Link"><a href="home.html">Logout</a></span>
+              <span class="Navbar-Link"><a href="home.html">Register</a></span>
+              <span class="Navbar-Link"><a href="home.html">Login</a></span>
+              <span class="Navbar-Link"><a href="home.html">Profile</a></span>
+              <span class="Navbar-Link"><a href="home.html">Home</a></span>
+            </div>
+             
+
+          
+          </div>
+        </div>
+         
+          <div class="home-hero">
+            <div class="home-hero-text-container">
+              <h1 class="home-heading2">
+                Zamek Książąt Pomorskich w Szczecinie
+              </h1>
+              <span class="home-text">
+                Zamek oraz jego wnętrza to niecodzienna atrakcja. Oczywiście
+                warto przyjechać tu, by zwiedzić wszystkie jego niesamowite
+                komnaty i zebrane tam eksponaty. Całe mnóstwo atrakcji:
+                koncerty, festiwale muzyczne, spektakle teatralne i kabaretowe,
+                wystawy, projekcje filmowe, konferencje oraz wykłady, w tym
+                dotyczące upowszechniania wiedzy o dziejach Pomorza Zachodniego
+                oraz szereg imprez dla dzieci. Takie połączenie sprawia, że
+                rodzinna wycieczka do zamku Książąt Pomorskich pochłonie Was
+                zupełnie i sprawi, że przeniesiecie się w czasie.
+              </span>
+              <div class="home-cta-btn-container">
+                <button class="home-cta-btn Anchor button">
+                  <span class="home-text1">
+                    <span>Pokaż</span>
+                    <br />
+                    <span>Na Mapie</span>
+                    <br />
+                  </span>
+                </button>
+                <button class="home-cta-btn1 Anchor button">
+                  Dowiedz Się Więcej
+                </button>
+              </div>
+            </div>
+            
+            <img
+              alt="image"
+              src="https://lh5.googleusercontent.com/p/AF1QipOlhkhWvEMmNCQQU-ORPb4m2_Eoj_ugpHt9toE=w408-h306-k-no"
+              class="home-image"
+            />
+
+
+
+            
+          </div>
+          <div id="map" style="width: 500px; height: 500px;"></div>
+          <div id="but">
+          
+          <button onclick="showAlert()">Click me</button>
+          <button onclick="showAlert2()">Click me</button>
+          <button onclick="showAlert3()">Click me</button>
+          </div>
+        </div>
+        <div class="home-features">
+           
+          <div class="home-heading-container">
+            <div class="home-code-embed">
+               
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+       
+    </div>
+
+
+     
+     
+
+   
+  </body>
+</html>
